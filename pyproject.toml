@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ml-keras"
+version = "0.1.0"
+description = ""
+authors = ["kidneyweakx <kidneyweaks@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ml_keras"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+tensorflow = "^2.13.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
