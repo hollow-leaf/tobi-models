@@ -9,6 +9,7 @@ packages = [{include = "ml_keras"}]
 [tool.poetry.dependencies]
 python = ">=3.11,<3.12"
 tensorflow = "^2.13.0"
+matplotlib = "^3.7.2"
 
 
 [build-system]
