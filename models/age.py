@@ -41,7 +41,7 @@ def readDataSet():
         if ext.lower() not in valid_images:
             continue
         img = Image.open(os.path.join(path,f))
-        img = np.reshape(img.resize([50, 50]).convert('1'), (1, 50, 50))
+        img = np.reshape(img.resize([50, 50]).convert('L'), (1, 50, 50))
         imgs = np.append(imgs, np.array(img), axis=0)
         imgs_tags = np.append(imgs_tags, imgs_tag)
     print(imgs_tags)
